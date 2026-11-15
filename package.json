@@ -1,0 +1,18 @@
+{
+  "name": "minigolf-rooms",
+  "version": "1.0.0",
+  "description": "Self-hosted multiplayer mini golf. Share a room code, play 9 holes with friends. The server owns the physics.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/scratch.js",
+    "test:suites": "node test/run.js && node test/moderation.js && node test/plus_wallet.js && node test/roomcode.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.3"
+  }
+}
